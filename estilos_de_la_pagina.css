@@ -13,8 +13,8 @@ body {
     padding: 20px;                   /* Añade espacio interior (padding) alrededor del contenido dentro del contenedor. */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
     /* Aplica una sombra suave para dar un efecto elevado al contenedor, haciéndolo parecer ligeramente levantado sobre el fondo. */
-    margin-top: 50px;                 /* Separa el contenedor del borde superior de la página. */
-    border-radius: 8px;               /* Aplica bordes redondeados al contenedor para suavizar su apariencia. */
+    margin-top: 50px;                /* Separa el contenedor del borde superior de la página. */
+    border-radius: 8px;              /* Aplica bordes redondeados al contenedor para suavizar su apariencia. */
 }
 
 h2 {
