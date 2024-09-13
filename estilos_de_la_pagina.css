@@ -5,7 +5,6 @@ body {
     margin: 0;                       /* Elimina los márgenes predeterminados del cuerpo */
     padding: 0;                      /* Elimina el padding predeterminado del cuerpo */
 }
-
 /* Contenedor principal del formulario */
 .container {
     width: 50%;                              /* Hace que el contenedor ocupe el 50% del ancho de la pantalla */
@@ -16,7 +15,6 @@ body {
     margin-top: 50px;                        /* Agrega un margen superior para separar el formulario del borde superior */
     border-radius: 8px;                      /* Bordes redondeados para suavizar la caja */
 }
-
 /* Estilo para el título del formulario */
 h2 {
     text-align: center;                      /* Centra el texto del título */
@@ -28,14 +26,12 @@ form {
     display: flex;                           /* Flexbox para organizar los elementos */
     flex-direction: column;                  /* Coloca los elementos del formulario en una columna vertical */
 }
-
 /* Estilo para las etiquetas de los campos */
 label {
     margin-top: 10px;                        /* Espaciado superior entre las etiquetas */
     font-weight: bold;                       /* Hace que el texto de las etiquetas sea más grueso */
     color: #333;                             /* Color gris oscuro para el texto de las etiquetas */
 }
-
 /* Estilo para los campos de entrada y los selectores */
 input, select {
     padding: 10px;                           /* Agrega relleno interior a los campos para mayor accesibilidad */
@@ -44,7 +40,6 @@ input, select {
     border-radius: 4px;                      /* Bordes ligeramente redondeados */
     font-size: 16px;                         /* Tamaño de fuente adecuado para legibilidad */
 }
-
 /* Estilo para el botón de envío */
 button {
     margin-top: 20px;                        /* Espaciado superior para separar el botón de los campos */
@@ -56,9 +51,7 @@ button {
     cursor: pointer;                         /* Cambia el cursor a mano para indicar interactividad */
     font-size: 16px;                         /* Tamaño de fuente adecuado para el botón */
 }
-
 /* Estilo para el botón cuando se pasa el cursor sobre él */
 button:hover {
     background-color: #ffffff;               /* Cambia el color del botón al pasar el cursor para dar retroalimentación visual */
 }
-
