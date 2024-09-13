@@ -1,57 +1,70 @@
-/* Estilo para todo el cuerpo de la página */
 body {
-    font-family: Arial, sans-serif;  /* Define una fuente clara y sencilla */
-    background-color: #f4f4f9;       /* Color de fondo suave para toda la página */
-    margin: 0;                       /* Elimina los márgenes predeterminados del cuerpo */
-    padding: 0;                      /* Elimina el padding predeterminado del cuerpo */
-}
-/* Contenedor principal del formulario */
-.container {
-    width: 50%;                              /* Hace que el contenedor ocupe el 50% del ancho de la pantalla */
-    margin: 0 auto;                          /* Centra horizontalmente el contenedor */
-    background-color: #fff;                  /* Fondo blanco para contraste con el fondo del cuerpo */
-    padding: 20px;                           /* Espaciado interior del contenedor */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* Sombra suave para dar un efecto elevado al contenedor */
-    margin-top: 50px;                        /* Agrega un margen superior para separar el formulario del borde superior */
-    border-radius: 8px;                      /* Bordes redondeados para suavizar la caja */
-}
-/* Estilo para el título del formulario */
-h2 {
-    text-align: center;                      /* Centra el texto del título */
-    color: #333;                             /* Color gris oscuro para el título */
+    font-family: Arial, sans-serif;  
+    /* Define la tipografía base para todo el documento. Se usa "Arial" y "sans-serif" como alternativa, que es una fuente clara y legible. */
+    background-color: #f4f4f9;     /* Establece un color de fondo suave para toda la página, proporcionando una apariencia ligera. */
+    margin: 0;                       /* Elimina los márgenes predeterminados del navegador alrededor de la página. */
+    padding: 0;                      /* Elimina cualquier padding predeterminado del cuerpo de la página. */
 }
 
-/* Estilo del formulario */
+.container {
+    width: 50%;                      /* El contenedor principal ocupa el 50% del ancho de la pantalla. */
+    margin: 0 auto;                  /* Centra el contenedor horizontalmente. */
+    background-color: #fff;        /* Aplica un fondo blanco al contenedor para destacar el contenido. */
+    padding: 20px;                   /* Añade espacio interior (padding) alrededor del contenido dentro del contenedor. */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    /* Aplica una sombra suave para dar un efecto elevado al contenedor, haciéndolo parecer ligeramente levantado sobre el fondo. */
+    margin-top: 50px;                 /* Separa el contenedor del borde superior de la página. */
+    border-radius: 8px;               /* Aplica bordes redondeados al contenedor para suavizar su apariencia. */
+}
+
+h2 {
+    text-align: center;               /* Centra el texto del título (H2) dentro del contenedor. */
+    color: #333; 
+                       /* Establece un color gris oscuro para el texto del título, proporcionando un contraste adecuado. */
+}
 form {
-    display: flex;                           /* Flexbox para organizar los elementos */
-    flex-direction: column;                  /* Coloca los elementos del formulario en una columna vertical */
+    display: flex;                    /* Usa flexbox para organizar los elementos dentro del formulario. */
+    flex-direction: column;           /* Coloca los elementos del formulario (inputs, etiquetas, botones) en una columna vertical. */
 }
-/* Estilo para las etiquetas de los campos */
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    /* Usa flexbox para organizar cada campo del formulario de manera que la etiqueta y el input estén alineados horizontalmente.
+       Aplica un margen inferior para separar cada grupo de campos del siguiente. */
+}
+
 label {
-    margin-top: 10px;                        /* Espaciado superior entre las etiquetas */
-    font-weight: bold;                       /* Hace que el texto de las etiquetas sea más grueso */
-    color: #333;                             /* Color gris oscuro para el texto de las etiquetas */
+    font-weight: bold;                /* Hace que el texto de las etiquetas sea más grueso, destacando su importancia. */
+    color: #333;                    /* Aplica un color gris oscuro al texto de las etiquetas. */
+    width: 30%;                       /* Define el ancho de las etiquetas, ocupando el 30% del espacio horizontal del contenedor del grupo de campos. */
 }
-/* Estilo para los campos de entrada y los selectores */
+
 input, select {
-    padding: 10px;                           /* Agrega relleno interior a los campos para mayor accesibilidad */
-    margin-top: 5px;                         /* Margen superior para separar las etiquetas de los campos */
-    border: 1px solid #ccc;                  /* Borde gris claro alrededor de los campos */
-    border-radius: 4px;                      /* Bordes ligeramente redondeados */
-    font-size: 16px;                         /* Tamaño de fuente adecuado para legibilidad */
+    padding: 10px;                    /* Añade relleno interno a los campos para facilitar su interacción y mejorar su apariencia. */
+    margin-top: 5px;                  /* Añade un pequeño margen superior para separar las etiquetas de los campos. */
+    border: 1px solid #ccc;         /* Aplica un borde gris claro alrededor de los campos de entrada y de selección. */
+    border-radius: 4px;               /* Bordes ligeramente redondeados para darle una apariencia más suave. */
+    font-size: 16px;                  /* Ajusta el tamaño de la fuente dentro de los campos de entrada para una mejor legibilidad. */
+
+    width: 65%;                       /* Los campos de entrada y los selectores ocupan el 65% del espacio horizontal dentro de cada grupo de campos. */
 }
-/* Estilo para el botón de envío */
+
 button {
-    margin-top: 20px;                        /* Espaciado superior para separar el botón de los campos */
-    padding: 10px;                           /* Relleno interior para hacer el botón más grande y fácil de presionar */
-    background-color: #6d3f03;              /* Color  para el fondo del botón */
-    color: white;                           /* Texto  para contraste */
-    border: none;                            /* Elimina el borde por defecto */
-    border-radius: 4px;                      /* Bordes redondeados para el botón */
-    cursor: pointer;                         /* Cambia el cursor a mano para indicar interactividad */
-    font-size: 16px;                         /* Tamaño de fuente adecuado para el botón */
+    margin-top: 20px;                 /* Añade espacio superior entre el botón y los campos de entrada. */
+    padding: 10px;                    /* Relleno dentro del botón para hacerlo más grande y fácil de hacer clic. */
+    background-color: #6d3f03;      /* Color marrón oscuro para el fondo del botón. */
+    color: white;                   /* Texto blanco que contrasta con el fondo oscuro del botón. */
+    border: none;                     /* Elimina el borde predeterminado del botón. */
+    border-radius: 4px;               /* Aplica bordes redondeados al botón para darle una apariencia más suave. */
+    cursor: pointer;                  /* Cambia el cursor a una mano cuando el usuario pasa sobre el botón, indicando que es clicable. */
+    font-size: 16px;                  /* Ajusta el tamaño de la fuente dentro del botón para que sea fácilmente legible. */
 }
-/* Estilo para el botón cuando se pasa el cursor sobre él */
+
 button:hover {
-    background-color: #ffffff;               /* Cambia el color del botón al pasar el cursor para dar retroalimentación visual */
+    background-color: #ffffff;      /* Cambia el fondo del botón a blanco cuando se pasa el cursor sobre él. */
+    color: #6d3f03;                 /* Cambia el color del texto a marrón para que contraste con el fondo blanco al hacer hover. */
+    border: 1px solid #6d3f03;      /* Añade un borde marrón oscuro al botón cuando se pasa el cursor, resaltándolo visualmente. */
 }

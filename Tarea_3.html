@@ -1,72 +1,74 @@
 <!DOCTYPE html>
-<html lang="es"> <!-- declara que el documento sigue la especificación HTML5. lang="es" indica que el contenido está en español. -->
+<html lang="es">  <!-- El documento utiliza la especificación HTML5 y está en español, indicado por "lang=es". -->
 <head>
-    <meta charset="UTF-8"> <!-- define el juego de caracteres como UTF-8, que es estándar para caracteres especiales. -->
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- ajusta la escala del contenido para que se vea correctamente en dispositivos móviles. 
-         "width=device-width" hace que el ancho de la página se ajuste al ancho de la pantalla del dispositivo.
-         "initial-scale=1.0" establece la escala inicial de visualización. -->
+    <meta charset="UTF-8">  <!-- Define que el juego de caracteres utilizado es UTF-8, compatible con una amplia gama de caracteres. -->
     
-    <title>Ingreso de Datos de Clientes</title>
-    <!-- <title> define el título de la página que aparece en la pestaña del navegador. -->
-    <link rel="stylesheet" href="estilos_de_la_pagina.css">
-    <!-- <link rel="stylesheet"> se utiliza para enlazar el archivo CSS externo que contiene los estilos visuales de la página. -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Controla la escala del contenido en dispositivos móviles. "width=device-width" ajusta el ancho del contenido al ancho de la pantalla del dispositivo,  y "initial-scale=1.0" establece la escala inicial de visualización. -->
+    
+    <title>Ingreso de Datos de Clientes</title> <!-- El título de la página que aparecerá en la pestaña del navegador. -->
+    
+    <link rel="stylesheet" href="estilos_de_la_pagina.css">  <!-- Vínculo al archivo de estilos CSS externo donde se definen los estilos visuales de la página. -->
 </head>
-<body> <!--  contiene todo el contenido visible de la página. -->
-    <div class="container">  <!-- crea un contenedor para el contenido, con la clase "container" que probablemente está estilada en el archivo CSS. -->
+<body>
+    <div class="container"> <!-- Un contenedor que agrupa todo el contenido visual del formulario, utilizando la clase "container" para aplicar estilos desde el archivo CSS. -->
 
-        <h2>Formulario de Ingreso de Datos de Clientes</h2> <!-- representa un título de segundo nivel. Aquí muestra el título del formulario. -->
+        <h2>Formulario de Ingreso de Datos de Clientes</h2> <!-- Título de segundo nivel (H2) que muestra el nombre del formulario. -->
 
-        <form action="https://script.google.com/macros/s/AKfycbw83q2mz4eR6UwU_W8dP0kpbmz_0OaJ3tnFpbAhSL1BNhx4vEueYfI9aSemU9mYtAW7QQ/exec" method="POST">
-            <!-- <form> define un formulario HTML. El atributo "action" indica la URL a donde se envían los datos.
-                 El atributo "method" está configurado en "POST", lo que significa que los datos se enviarán al servidor en el cuerpo de la solicitud. -->
+        <form action="https://script.google.com/macros/s/AKfycbw83q2mz4eR6UwU_W8dP0kpbmz_0OaJ3tnFpbAhSL1BNhx4vEueYfI9aSemU9mYtAW7QQ/exec" method="POST"> 
+            <!-- El formulario enviará los datos al servidor a través de la URL especificada en el atributo "action" utilizando el método "POST". -->
 
-            <label for="cedula">Cédula</label>
-            <!-- <label> define una etiqueta para el campo de entrada. El atributo "for" está vinculado al ID del campo de entrada correspondiente. -->
-            <input type="text" id="cedula" name="Cedula" required>
-            <!-- <input> define un campo de entrada de texto.
-                 type="text" indica que se espera un texto.
-                 id="cedula" establece un identificador único para el campo.
-                 name="Cedula" es el nombre que se enviará en la solicitud POST.
-                 required hace que este campo sea obligatorio. -->
-            <br><br>
-            <!-- <br> se usa para saltar una línea, en este caso se usan dos para espaciar los campos del formulario. -->
+            <div class="form-group">
+            <!-- Cada campo del formulario está envuelto en un div con la clase "form-group", que facilita la organización y estilos. -->
+            
+                <label for="cedula">Cédula</label>
+                <!-- La etiqueta que describe el campo de entrada, asociada al campo mediante el atributo "for", que corresponde al id del input. -->
+                
+                <input type="text" id="cedula" name="Cedula" required>
+                <!-- Campo de entrada de tipo texto para capturar la cédula. El atributo "required" indica que es obligatorio. -->
+            </div>
 
-            <label for="apellidos">Apellidos</label>
-            <input type="text" id="apellidos" name="Apellidos" required>
-            <br><br>
+            <div class="form-group">
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="Apellidos" required> <!-- Campo de entrada de texto para capturar los apellidos del cliente. -->
+            </div>
 
-            <label for="nombres">Nombres</label>
-            <input type="text" id="nombres" name="Nombres" required>
-            <br><br>
+            <div class="form-group">
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="Nombres" required> <!-- Campo de entrada de texto para capturar los nombres del cliente. -->
+            </div>
 
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direccion" name="Direccion" required>
-            <br><br>
+            <div class="form-group">
+                <label for="direccion">Dirección</label>
+                <input type="text" id="direccion" name="Direccion" required> <!-- Campo de entrada de texto para capturar la dirección del cliente. -->
+            </div>
 
-            <label for="telefono">Teléfono</label>
-            <input type="tel" id="telefono" name="Telefono" required>
-            <!-- type="tel" especifica que este campo espera una entrada de número de teléfono. -->
-            <br><br>
+            <div class="form-group">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="Telefono" required> <!-- Campo de entrada de tipo "tel" que valida el formato de número telefónico. -->
+            </div>
 
-            <label for="email">Correo Electrónico</label>
-            <input type="email" id="email" name="Email" required> <!-- type="email" especifica que este campo espera un correo electrónico válido. -->
-            <br><br>
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="Email" required> <!-- Campo de entrada de tipo "email" que valida la entrada de una dirección de correo válida. -->
+            </div>
 
-            <label for="ciudad">Ciudad</label> <!-- Etiqueta para el campo de selección de ciudad -->
-            <select id="ciudad" name="Ciudad" required>  <!-- Campo de selección para elegir una ciudad -->
-                <option value="" disabled selected>Selecciona una ciudad</option> <!-- Opción predeterminada y no seleccionable que sirve como mensaje de guía -->
-                <!-- Opciones disponibles para seleccionar -->
-                <option value="Manta">Manta</option>   
-                <option value="Montecristi">Montecristi</option>
-                <option value="Jaramijo">Jaramijo</option>
-                <option value="Portoviejo">Portoviejo</option>
-            </select>
-            <br><br>
-            <button type="submit">Enviar</button>
-            <!-- <button> crea un botón que, al hacer clic, envía el formulario. El atributo type="submit" lo define como botón de envío. -->
-        </form>  <!-- Cierra el formulario. -->
-    </div> <!-- Cierra el contenedor del formulario. -->
-</body> <!-- Cierra el cuerpo de la página. -->
-</html> <!-- Cierra el documento HTML. -->
+            <div class="form-group">
+                <label for="ciudad">Ciudad</label> <!-- Etiqueta para el campo de selección de ciudad. -->
+
+                <select id="ciudad" name="Ciudad" required> <!-- Campo de selección que permite elegir una ciudad. El atributo "required" obliga al usuario a seleccionar una opción. -->
+
+                    <option value="" disabled selected>Selecciona una ciudad</option>
+                    <!-- Opción predeterminada deshabilitada y seleccionada por defecto para guiar al usuario a realizar una selección. -->
+                    
+                    <option value="Manta">Manta</option>   
+                    <option value="Montecristi">Montecristi</option>
+                    <option value="Jaramijo">Jaramijo</option>
+                    <option value="Portoviejo">Portoviejo</option>
+                </select>
+            </div>
+
+            <button type="submit">Enviar</button> <!-- Botón que, al hacer clic, envía el formulario. Está configurado como botón de envío con "type=submit". -->
+        </form>
+    </div>
+</body>
+</html>
