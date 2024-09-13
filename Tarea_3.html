@@ -56,9 +56,14 @@
             <br><br>
 
             <label for="ciudad">Ciudad</label>
-            <input type="text" id="ciudad" name="Ciudad" required>
+            <select id="ciudad" name="Ciudad" required>
+            <option value="" disabled selected>Selecciona una ciudad</option>
+                <option value="Manta">Manta</option>   
+                <option value="Montecristi">Montecristi</option>
+                <option value="Jaramijo">Jaramijo</option>
+                <option value="Portoviejo">Portoviejo</option>
+            </select>
             <br><br>
-
             <button type="submit">Enviar</button>
             <!-- <button> crea un botón que, al hacer clic, envía el formulario. El atributo type="submit" lo define como botón de envío. -->
         </form>  <!-- Cierra el formulario. -->
