@@ -27,29 +27,36 @@ form {
     flex-direction: column;           /* Coloca los elementos del formulario (inputs, etiquetas, botones) en una columna vertical. */
 }
 
+/* Estilos generales para el formulario */
 .form-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10px;
-    /* Usa flexbox para organizar cada campo del formulario de manera que la etiqueta y el input estén alineados horizontalmente.
-       Aplica un margen inferior para separar cada grupo de campos del siguiente. */
+    display: flex;                   /* Utiliza Flexbox para organizar los elementos (etiqueta e input) dentro de cada grupo de campos, permitiendo una disposición horizontal. */ 
+    justify-content: space-between;  /* Distribuye el espacio entre la etiqueta y el input, asegurando que estén separados uniformemente. */
+    align-items: left;             /* Alinea verticalmente la etiqueta y el input en el centro del grupo de campos, para una mejor presentación. */
+    margin-bottom: 10px;             /* Añade un margen inferior a cada grupo de campos para separar visualmente cada uno de ellos. */
 }
+
+input, select {
+    padding: 10px;            /* Añade espacio interno (padding) en los campos de entrada y de selección para hacerlos más fáciles de usar y visualmente atractivos. */
+    margin-top: 5px;          /* Añade un pequeño margen superior para separar visualmente la etiqueta del campo de entrada. */
+    border: 1px solid #ccc; /* Aplica un borde gris claro alrededor de los campos de entrada para darles una apariencia definida pero suave. */
+    border-radius: 5px;       /* Los bordes redondeados proporcionan un estilo más amigable y moderno al input y al selector. */
+    font-size: 16px;          /* Aumenta el tamaño de la fuente dentro de los inputs para mejorar su legibilidad. */
+    width: 85%;               /* El campo de entrada y los selectores ocuparán el 65% del espacio disponible dentro del grupo de campos, dejando el resto para la etiqueta. */
+}
+
+.form-group.small input {
+    width: 0%;               /* El ancho del input para el campo de la ciudad se reduce al 30%, lo que hace que ocupe menos espacio horizontal en comparación con otros campos. */
+}
+
+.form-group.small label {
+    width: 0%;              /* Ajusta el ancho de la etiqueta en el grupo de campos pequeño (como el de la ciudad), haciéndola más grande si es necesario para alinear mejor con el input. */
+}
+
 
 label {
     font-weight: bold;                /* Hace que el texto de las etiquetas sea más grueso, destacando su importancia. */
     color: #333;                    /* Aplica un color gris oscuro al texto de las etiquetas. */
     width: 30%;                       /* Define el ancho de las etiquetas, ocupando el 30% del espacio horizontal del contenedor del grupo de campos. */
-}
-
-input, select {
-    padding: 10px;                    /* Añade relleno interno a los campos para facilitar su interacción y mejorar su apariencia. */
-    margin-top: 5px;                  /* Añade un pequeño margen superior para separar las etiquetas de los campos. */
-    border: 1px solid #ccc;         /* Aplica un borde gris claro alrededor de los campos de entrada y de selección. */
-    border-radius: 4px;               /* Bordes ligeramente redondeados para darle una apariencia más suave. */
-    font-size: 16px;                  /* Ajusta el tamaño de la fuente dentro de los campos de entrada para una mejor legibilidad. */
-
-    width: 65%;                       /* Los campos de entrada y los selectores ocupan el 65% del espacio horizontal dentro de cada grupo de campos. */
 }
 
 button {
